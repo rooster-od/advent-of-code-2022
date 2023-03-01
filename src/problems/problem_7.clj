@@ -1,11 +1,4 @@
 (ns problems.problem-7
-  (:require [clojure.java.io :as io]
-            [clojure.string :as str]
-            [clojure.walk :as walk]))
-
-(defn read-input-file
-  [file-location]
-  (seq (str/split (slurp (io/resource file-location)) #"\n")))
 
 (defn is-directory?
   [input]
